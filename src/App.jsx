@@ -7,10 +7,12 @@ import Contato from './pages/Contato'
 import Login from './pages/Login'
 import Error from './pages/Error'
 
+
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col justify-between bg-[#141414] p-1">
+      <div className="min-h-screen flex flex-col justify-between
+      bg-[#141414] p-1">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,9 +21,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <footer />
+        <Footer />
       </div>
-
     </Router>
   )
 }
